@@ -178,12 +178,9 @@ Notes:
 
 ## Changelog
 
-<<<<<<< HEAD
-=======
 - 2018/10/19
   Move F-Keys to key-pad like layout.
 
->>>>>>> upstream/master
 - 2018/05/29
   Add number keys for cases when keypad numbers are handled differently.
 
