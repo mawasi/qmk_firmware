@@ -39,14 +39,14 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * |------+------+------+------+------|           |------+------+------+------+------|
  * |   Z  |   X  |   C  |   V  |   B  |           |   N  |   M  |   ,  |   .  |   /  |
  * `-------------+------+------+------|           |------+------+------+------+------'
- *               |Ctrl/Esc| LOWER|Sft/Spc|        |Sft/Spc| RAISE| KANA |
+ *               |Ctrl/Esc| LOWER|Sft/Spc|        |Sft/Spc| RAISE| Alt |
  *               `--------------------'           `--------------------'
  */
 [_QWERTY] = LAYOUT( \
   KC_Q,    KC_W,    KC_E,    KC_R,    KC_T,         KC_Y,    KC_U,    KC_I,    KC_O,    KC_P,    \
   KC_A,    KC_S,    KC_D,    KC_F,    KC_G,         KC_H,    KC_J,    KC_K,    KC_L,    KC_SCLN, \
   KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,         KC_N,    KC_M,    KC_COMM, KC_DOT,  KC_SLSH, \
-  MT(MOD_LCTL, KC_ESC), LOWER, MT(MOD_LSFT, KC_SPC),   MT(MOD_LSFT, KC_SPC), RAISE, LALT(KC_GRV)  \
+  MT(MOD_LCTL, KC_ESC), LOWER, MT(MOD_LSFT, KC_SPC),   MT(MOD_LSFT, KC_SPC), RAISE, KC_LALT  \
 ),
 
 /* Raise mawasi edit
@@ -63,7 +63,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  */
 [_RAISE] = LAYOUT( \
   XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,  KC_ESC,      KC_LGUI, KC_PGUP, KC_UP, KC_PGDN, KC_BSPC, \
-  KC_TAB,  KC_UNDS, KC_PLUS, XXXXXXX,  KC_DEL,      KC_HOME, KC_LEFT, KC_DOWN,  KC_RGHT, KC_ENT, \
+  KC_TAB,  XXXXXXX, XXXXXXX, XXXXXXX,  KC_DEL,      KC_HOME, KC_LEFT, KC_DOWN,  KC_RGHT, KC_ENT, \
   KC_LCTL, KC_LSFT, KC_LALT, XXXXXXX, XXXXXXX,      KC_END, XXXXXXX, XXXXXXX,   XXXXXXX, XXXXXXX, \
                     _______, _______, _______,      _______,  _______, XXXXXXX\
 ),
